@@ -7,7 +7,7 @@
 # e. Utwórz skrypt uruchomieniowy main, który importuje i wykorzystuje powyższe klasy i funkcje
 
 from shop.apple import Apple
-from shop.order import print_order, generate_order
+from shop.order import generate_order
 from shop.potato import Potato
 
 
@@ -21,9 +21,9 @@ def run_homework():
     print(old_potato.species_name, old_potato)
 
     first_order = generate_order()
-    print_order(first_order)
+    first_order.print_self()
     second_order = generate_order()
-    print_order(second_order)
+    second_order.print_self()
 
 
 if __name__ == '__main__':
