@@ -5,8 +5,8 @@ from PP_Programowanie_obiektowe.Enkapsulacja.shop.order import Order
 from PP_Programowanie_obiektowe.Enkapsulacja.shop.product import Product
 
 
-def get_order_price(order):
-    return order.total_price
+# def get_order_price(dupa):
+#     return dupa.total_price
 
 
 def run_homework():
@@ -14,7 +14,8 @@ def run_homework():
     for _ in range(5):
         orders.append(Order.generate_order(5))
 
-    orders.sort(key=get_order_price)
+    orders.sort(key=lambda order: order.total_price)
+
     for order in orders:
         print(order)
 
