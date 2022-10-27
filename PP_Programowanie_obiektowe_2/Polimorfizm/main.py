@@ -38,10 +38,18 @@ def run_homework():
         discount_policy=hundred_pln_discount,
     )
 
+    express_order1 = ExpressOrder(
+        delivery_date="10-11-2022",
+        client_first_name="Paweł",
+        client_last_name="Tatar",
+        order_elements=order_elements,
+    )
+
     print(no_discount_order)
     print(order_with_percentage_discount)
     print(order_with_absolute_value_discount)
 
+    print(express_order1)
 
 if __name__ == '__main__':
     run_homework()
